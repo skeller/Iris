@@ -183,6 +183,11 @@ const Album = ({
               )}
             </li>
           ) : null}
+          {!slim_mode && album.path ? (
+            <li>
+              path: {album.path}
+            </li>
+          ) : null}
         </ul>
       </div>
 

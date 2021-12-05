@@ -331,6 +331,7 @@ const formatAlbum = function (data) {
     'tracks',
     'tracks_total',
     'artists',
+    'path',
   ];
 
   // Nested album object (eg in spotify library)
@@ -612,6 +613,7 @@ const formatTrack = function (data) {
     'lyrics',
     'lyrics_path',
     'lyrics_results',
+    'audio_ext',
     'artists', // Array of simple records
     'album', // Array of simple records
   ];

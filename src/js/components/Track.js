@@ -253,6 +253,15 @@ const Track = ({
     );
   }
 
+  if (item.audio_ext) {
+    track_details.push(
+      <li className="details__item" key="ext">
+        <span>{item.audio_ext}</span>
+      </li>,
+    );
+  }
+
+
   // If we're touchable, and can sort this tracklist
   let drag_zone = null;
   if (isTouchDevice() && can_sort) {
